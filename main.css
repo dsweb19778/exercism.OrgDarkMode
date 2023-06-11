@@ -1,0 +1,16 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #392B58;
+  color: #FFF;
+  width: 300px;
+  height: 100px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+a {
+  color: #99D5C9;
+}

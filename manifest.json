@@ -1,0 +1,15 @@
+{
+  "name": "PremiumDarkMode for Exercism",
+  "version": "0.0.1",
+  "description": "Enable Premium Dark Mode for Exercism",
+  "manifest_version": 3,
+  "author": "DSWEB19778",
+  "content_scripts": [{
+    "js": ["main.js"],
+    "matches": ["https://exercism.org/*"]
+  }],
+  "action":{
+      "default_popup": "index.html",
+      "default_title": "DarkMode Premium for Exercism"
+  }
+}
