@@ -5,5 +5,5 @@ Simple local extension will help you to activate Exercism Premium Dark Mode
 * in Extensions -> Enable Developer Mode -> load unpacked -> choose the extension folder -> done 
 * Just visit exercism.org without any configuration
 # Bugs
-* Some pages is looking weird lol
-* you need to refresh page sometimes
+* Some pages is looking weird lol [fixed]
+* you need to refresh page sometimes [fixed]
