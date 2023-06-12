@@ -5,12 +5,14 @@ let counter = 0
 darkmoding()
 
 function darkmoding() {
-  // enable dark mode
-  getbody = document.getElementsByTagName('body')
-  getbody[0].className = 'namespace- controller-premium action-show theme-dark user-signed_in'
-  // disable donating
-  getdonate = document.getElementById('site-footer')
-  getdonate.style = 'display: none;'
+  if (url.match('edit')[0] == 'edit') {
+    getbody = document.getElementsByTagName('body')
+    getbody[0].className = 'namespace-tracks controller-exercises action-edit theme-dark user-signed_in'
+  } else {
+    getbody = document.getElementsByTagName('body')
+    getbody[0].className = 'namespace- controller-premium action-show theme-dark user-signed_in'
+  }
+
 }
 
 function detecting_url_changes() {
@@ -18,8 +20,9 @@ function detecting_url_changes() {
   if (counter > url.length || counter < url.length) {
     darkmoding()
   } else if (counter == url.length) {
-    console.log('url not changed')
+    console.log('not changed')
   }
 }
 
 setInterval(detecting_url_changes, 4000)
+
